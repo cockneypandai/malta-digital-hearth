@@ -1,0 +1,123 @@
+import {
+  Newspaper,
+  FirstAid,
+  Bus,
+  Bank,
+  House,
+  ShoppingCart,
+  Ticket,
+  SoccerBall,
+  PawPrint,
+} from "@phosphor-icons/react";
+
+export const categories = [
+  {
+    id: "news",
+    title: "News & Media",
+    description: "Stay informed with local news",
+    icon: <Newspaper weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "Times of Malta", url: "https://timesofmalta.com", description: "Leading English newspaper" },
+      { name: "Malta Today", url: "https://maltatoday.com.mt", description: "News and opinion" },
+      { name: "The Malta Independent", url: "https://independent.com.mt", description: "Independent journalism" },
+      { name: "TVM", url: "https://tvmnews.mt", description: "National broadcaster" },
+      { name: "Lovin Malta", url: "https://lovinmalta.com", description: "Lifestyle & news" },
+    ],
+  },
+  {
+    id: "health",
+    title: "Health",
+    description: "Healthcare services & info",
+    icon: <FirstAid weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "Mater Dei Hospital", url: "https://deputyprimeminister.gov.mt/en/MDH", description: "Main hospital" },
+      { name: "Health.gov.mt", url: "https://health.gov.mt", description: "Ministry of Health" },
+      { name: "Pharmacy of Your Choice", url: "https://poyc.gov.mt", description: "Free medicine scheme" },
+      { name: "COVID-19 Info", url: "https://covid19malta.info", description: "Latest updates" },
+    ],
+  },
+  {
+    id: "transport",
+    title: "Transport",
+    description: "Getting around Malta",
+    icon: <Bus weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "Tallinja (Malta Bus)", url: "https://www.publictransport.com.mt", description: "Public transport" },
+      { name: "Gozo Channel", url: "https://gozochannel.com", description: "Ferry to Gozo" },
+      { name: "Malta International Airport", url: "https://maltairport.com", description: "Flight info" },
+      { name: "Transport Malta", url: "https://transport.gov.mt", description: "Licenses & registrations" },
+      { name: "eCabs", url: "https://ecabs.com.mt", description: "Taxi & ride service" },
+    ],
+  },
+  {
+    id: "finance",
+    title: "Finance",
+    description: "Banking & financial services",
+    icon: <Bank weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "Bank of Valletta", url: "https://bov.com", description: "Leading local bank" },
+      { name: "HSBC Malta", url: "https://hsbc.com.mt", description: "International banking" },
+      { name: "APS Bank", url: "https://apsbank.com.mt", description: "Community bank" },
+      { name: "Malta Stock Exchange", url: "https://borzamalta.com.mt", description: "Stock trading" },
+    ],
+  },
+  {
+    id: "property",
+    title: "Property",
+    description: "Real estate & housing",
+    icon: <House weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "Housing Authority", url: "https://ha.gov.mt", description: "Government housing" },
+      { name: "Frank Salt", url: "https://franksalt.com.mt", description: "Real estate agency" },
+      { name: "Dhalia", url: "https://dhalia.com", description: "Property listings" },
+      { name: "RE/MAX Malta", url: "https://remax-malta.com", description: "International agency" },
+    ],
+  },
+  {
+    id: "daily-life",
+    title: "Daily Life",
+    description: "Everyday essentials",
+    icon: <ShoppingCart weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "Enemalta", url: "https://enemalta.com.mt", description: "Electricity provider" },
+      { name: "Water Services", url: "https://wsc.com.mt", description: "Water utility" },
+      { name: "GO", url: "https://go.com.mt", description: "Telecom & internet" },
+      { name: "Melita", url: "https://melita.com", description: "Telecom & TV" },
+      { name: "Pavi Supermarket", url: "https://pavi.com.mt", description: "Groceries online" },
+    ],
+  },
+  {
+    id: "entertainment",
+    title: "Entertainment",
+    description: "Events & leisure",
+    icon: <Ticket weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "Malta Events", url: "https://maltaevents.mt", description: "What's on" },
+      { name: "Eden Cinemas", url: "https://edencinemas.com.mt", description: "Movie listings" },
+      { name: "Visit Malta", url: "https://visitmalta.com", description: "Tourism & attractions" },
+      { name: "Tickets Malta", url: "https://ticketsmalta.com", description: "Event tickets" },
+    ],
+  },
+  {
+    id: "sports",
+    title: "Sports",
+    description: "Sports news & facilities",
+    icon: <SoccerBall weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "Malta FA", url: "https://mfa.com.mt", description: "Football association" },
+      { name: "Sport Malta", url: "https://sportmalta.mt", description: "National sports council" },
+      { name: "Malta Olympic Committee", url: "https://nocmalta.org", description: "Olympic sports" },
+    ],
+  },
+  {
+    id: "pets",
+    title: "Pets",
+    description: "Pet services & care",
+    icon: <PawPrint weight="duotone" className="w-7 h-7" />,
+    links: [
+      { name: "MSPCA", url: "https://mspca.org.mt", description: "Animal welfare" },
+      { name: "Animal Welfare", url: "https://animalwelfare.gov.mt", description: "Government services" },
+      { name: "Pet Mania", url: "https://petmania.com.mt", description: "Pet supplies" },
+    ],
+  },
+];

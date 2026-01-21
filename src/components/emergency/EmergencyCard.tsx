@@ -73,11 +73,8 @@ export const EmergencyCard = ({
         )}
       </div>
 
-      {/* Spacer for consistent action alignment */}
-      <div className="flex-grow" />
-
-      {/* Actions */}
-      <div className="flex flex-col gap-2 mt-1">
+      {/* Actions - mt-auto pushes to bottom for consistent alignment */}
+      <div className="flex flex-col gap-2 mt-auto">
         {primaryAction && (
           <a
             href={primaryAction.href}

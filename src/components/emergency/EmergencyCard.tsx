@@ -52,12 +52,15 @@ export const EmergencyCard = ({
         <span className="text-xl text-muted-foreground">{icon}</span>
       </div>
 
-      {/* Scope Label */}
-      {scope && (
-        <div className="flex">
+      {/* Description & Scope Row - aligned */}
+      <div className="flex justify-between items-center gap-2">
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          {description}
+        </p>
+        {scope && (
           <span
             className={`
-              text-xs uppercase tracking-wide px-2 py-0.5 rounded ml-auto
+              text-xs uppercase tracking-wide px-2 py-0.5 rounded whitespace-nowrap shrink-0
               ${
                 scope.type === "emergency"
                   ? "bg-emergency/20 text-red-400 border border-emergency/30"
@@ -67,13 +70,11 @@ export const EmergencyCard = ({
           >
             {scope.label}
           </span>
-        </div>
-      )}
+        )}
+      </div>
 
-      {/* Description */}
-      <p className="text-muted-foreground text-sm leading-relaxed flex-grow">
-        {description}
-      </p>
+      {/* Spacer for consistent action alignment */}
+      <div className="flex-grow" />
 
       {/* Actions */}
       <div className="flex flex-col gap-2 mt-1">

@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Buildings, Phone, Gavel, Scales, CurrencyDollar } from "@phosphor-icons/react";
+import { Buildings, Phone, Gavel, Scales, CurrencyDollar, ArrowRight } from "@phosphor-icons/react";
 
 const governmentLinks = [
   {
@@ -73,25 +74,30 @@ export function GovernmentSection() {
           ))}
         </div>
 
-        {/* Emergency Contact */}
+        {/* Emergency Contact - Links to Emergency Page */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1 }}
-          className="mt-6 p-4 rounded-lg bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20"
         >
-          <div className="flex items-center justify-between">
+          <Link
+            to="/emergency"
+            className="mt-6 p-4 rounded-lg bg-gradient-to-r from-emergency/10 to-emergency/5 border border-emergency/20 hover:border-emergency/40 transition-all flex items-center justify-between group"
+          >
             <div className="flex items-center gap-3">
-              <Phone weight="fill" className="w-6 h-6 text-primary" />
+              <Phone weight="fill" className="w-6 h-6 text-emergency" />
               <div>
-                <p className="font-semibold text-foreground">Emergency Services</p>
+                <p className="font-semibold text-foreground group-hover:text-emergency transition-colors">Emergency Services</p>
                 <p className="text-sm text-muted-foreground">
-                  Police, Ambulance, Fire
+                  Police, Ambulance, Fire & More
                 </p>
               </div>
             </div>
-            <div className="text-3xl font-bold gradient-text">112</div>
-          </div>
+            <div className="flex items-center gap-3">
+              <div className="text-3xl font-bold text-emergency">112</div>
+              <ArrowRight weight="bold" className="w-5 h-5 text-emergency opacity-0 group-hover:opacity-100 transition-opacity" />
+            </div>
+          </Link>
         </motion.div>
       </div>
     </motion.section>

@@ -25,6 +25,13 @@
     --accent: 333 71% 51%;
     --accent-foreground: 0 0% 100%;
 
+    /* Emergency colors */
+    --emergency: 0 72% 44%;
+    --emergency-foreground: 0 0% 100%;
+    --emergency-hover: 0 72% 38%;
+    --urgent: 25 95% 53%;
+    --urgent-foreground: 0 0% 100%;
+
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
